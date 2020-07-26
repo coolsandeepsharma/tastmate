@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Edit task - taskmate</title>
+{% endblock title%}
+
+{% block content %}
+  <div class="container">
+    <h1>{{ task_obj.task }}</h1>
+    {% if task_obj.manager == request.user %}
+    <form method="POST">
+      {% csrf_token %}
+        <div class="form-group">
+          <input type="text" class="form-control" name="task" placeholder="{{task_obj.task}}" value="{{task_obj.task}}">
+          <input type="hidden" name="done" value="{{task_obj.done}}">
+          <button type="submit" class="btn btn-primary">Update Task</button>
+        </div>
+      </form>
+      {% else %}
+        <p>This Task doesn't belong to You.</p>
+      {% endif %}
+  </div>
+{% endblock content %}
