@@ -43,8 +43,11 @@ decorator==4.3.0
 defusedxml==0.5.0
 distlib==0.3.0
 distributed==1.25.1
+dj-database-url==0.5.0
 Django==2.2.5
 django-crispy-forms==1.9.2
+django-environ==0.4.5
+django-heroku==0.3.1
 docutils==0.14
 entrypoints==0.2.3
 et-xmlfile==1.0.1
@@ -128,6 +131,7 @@ ply==3.11
 prometheus-client==0.5.0
 prompt-toolkit==2.0.7
 psutil==5.4.8
+psycopg2==2.8.5
 py==1.7.0
 pycodestyle==2.4.0
 pycosat==0.6.3
@@ -193,6 +197,7 @@ virtualenv==20.0.18
 wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.14.1
+whitenoise==5.1.0
 widgetsnbextension==3.4.2
 win-inet-pton==1.0.1
 win-unicode-console==0.5
